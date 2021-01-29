@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "289025186979",
+    "project_id": "desafio-digital-games",
+    "storage_bucket": "desafio-digital-games.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289025186979:android:d5751501830b10cf397316",
+        "android_client_info": {
+          "package_name": "com.example.digitalgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289025186979-vukkjdl3f2rtd06fofio443irrqealtm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2HCEq1eOZe0VpYqQVGqS1bkh-y8IYgxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289025186979-vukkjdl3f2rtd06fofio443irrqealtm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GameActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/Button_Game_Voltar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_back" />
+        <ImageView
+            android:id="@+id/ImageView_Game_Capa"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/capa_hma" />
+
+        <TextView
+            android:id="@+id/TextView_Game_Titulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"
+            android:backgroundTint="@color/transparent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:shadowColor="#000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:text="Titulo"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </FrameLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/Button_Game_Edit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginRight="20dp"
+        app:civ_border="false"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/TextView_Game_Titulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="example"
+                android:textSize="10pt"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lançamento: "
+                    android:textSize="8pt"
+                    android:textColor="@color/grey"/>
+                <TextView
+                    android:id="@+id/TextView_Game_Lancamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000"
+                    android:textSize="8pt"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/TextView_Game_Descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:text="example"
+                android:textSize="9pt"
+                android:textColor="@color/grey"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
